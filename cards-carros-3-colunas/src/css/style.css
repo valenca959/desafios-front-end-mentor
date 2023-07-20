@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hs1(0, 0%, 95%);
+}
+
+#Conteiner {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card {
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-left: 30px;
+}
+
+.card:nth-of-type(1) {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.card:nth-of-type(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card:nth-of-type(3) {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.card h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: #fff;
+    font-size: 38px;
+}
+
+.card p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: #ffffffa2;
+    font-size: 12px;
+}
+
+.botao {
+    padding: 8px 14px;
+    font-family: 'Lexend Deca', sans-serif;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.botao:nth-of-type(1) {
+color: hsl(31, 77%, 52%);
+
+}
+
+.botao:nth-of-type(2) {
+color: hsl(184, 100%, 22%);
+}
+
+.botao:nth-of-type(3) {
+color: hsl(179, 100%, 13%);
+
+}
+
+.botao:hover {
+    background-color: #ffffff00;
+    color: #fff;
+    border: solid;
+}
+
+/* Para smartphones etc... */
+@media only screen and (max-width: 600px) {
+    #Conteiner{
+        margin: 10px 0px 10px 0px;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .card {
+        border-radius: 0 !important;
+        height: 400px !important;
+    }
+    
+    .card:nth-of-type(1) {
+        border-top-right-radius: 8px !important;
+        border-top-left-radius: 8px !important;
+    }
+    
+    
+    .card:nth-of-type(3) {
+        border-bottom-right-radius: 8px !important;
+        border-bottom-left-radius: 8px !important;
+    }
+}
